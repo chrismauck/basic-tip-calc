@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Chris Mauck (@chris_mauck)">
+    <meta name="description" content="Calc">
+    <title>Calc</title>
+    <!-- <link rel="canonical" href="/fabric-base/"> -->
+
+    <link rel="stylesheet" href="core/css/normalize.min.css">
+    <link rel="stylesheet" href="core/css/fabric.min.css">
+    <link rel="stylesheet" href="core/css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="grid">
+                <div class="cols-8:sm offset-3:sm cols-6:md offset-4:md cols-4:lg offset-5:lg cols-12">
+                    <form action="javascript: void(0)">
+                        <label for="dollarField">Bill</label>
+                        <input id="dollarField" type="text" placeholder="$14.99" value="12.99">
+
+                        <label for="tipRangeField">Tip</label>
+                        <select id="tipRangeField">
+                            <option value="05">5%</option>
+                            <option value="10">10%</option>
+                            <option value="15">15%</option>
+                            <option value="20" selected>20%</option>
+                            <option value="25">25%</option>
+                        </select>
+                        <!-- <input type="submit" value="Submit"> -->
+                    </form>
+                </div>
+            </div>
+            <div class="grid" id="totals">
+                <div class="cols-8:sm offset-3:sm cols-6:md offset-4:md cols-4:lg offset-5:lg cols-12">
+                    <p>Bill: <span id="bill-value"></span></p>
+                    <p>Tip: <span id="tip-value"></span></p>
+                    <p>Total: <span id="total-value"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<script src="core/js/simple.js"></script>
+<script src="core/js/calc.js"></script>
+</body>
+</html>

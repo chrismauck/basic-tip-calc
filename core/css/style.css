@@ -1,0 +1,10 @@
+#totals div {
+    position: relative;
+}
+#totals span {
+    position: absolute;
+    right: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+}
